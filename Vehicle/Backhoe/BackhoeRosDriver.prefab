@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6693801805278112107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 144610191623398504}
+  - component: {fileID: 5607841088647406454}
+  - component: {fileID: 1344174691353301040}
+  - component: {fileID: 1840613311201033058}
+  - component: {fileID: 1574581095925230873}
+  - component: {fileID: 2083403064537756219}
+  m_Layer: 0
+  m_Name: BackhoeRosDriver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &144610191623398504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6693801805278112107}
+  m_LocalRotation: {x: 0.021814894, y: -0, z: -0, w: 0.99976206}
+  m_LocalPosition: {x: -1.4000015, y: 3.3, z: 0.9000015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5607841088647406454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6693801805278112107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1620de00fe51a438c7320e15b880b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vehicle: {fileID: 0}
+  _baseTopic: /ocs/control/base/target/velocity
+  _boomTopic: /ocs/control/boom/target/velocity
+  _armTopic: /ocs/control/arm/target/velocity
+  _endTopic: /ocs/control/end/target/velocity
+--- !u!114 &1344174691353301040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6693801805278112107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 209040d53a4df694cad7bd2fdb224257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  articulationBody: {fileID: 0}
+  _publishMessageFrequency: 0.5
+  _topicName:
+    prefix: /ocs/control/base/current
+    position: /position
+    velocity: /velocity
+    effort: /effort
+--- !u!114 &1840613311201033058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6693801805278112107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 209040d53a4df694cad7bd2fdb224257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  articulationBody: {fileID: 0}
+  _publishMessageFrequency: 0.5
+  _topicName:
+    prefix: /ocs/control/boom/current
+    position: /position
+    velocity: /velocity
+    effort: /effort
+--- !u!114 &1574581095925230873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6693801805278112107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 209040d53a4df694cad7bd2fdb224257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  articulationBody: {fileID: 0}
+  _publishMessageFrequency: 0.5
+  _topicName:
+    prefix: /ocs/control/arm/current
+    position: /position
+    velocity: /velocity
+    effort: /effort
+--- !u!114 &2083403064537756219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6693801805278112107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 209040d53a4df694cad7bd2fdb224257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  articulationBody: {fileID: 0}
+  _publishMessageFrequency: 0.5
+  _topicName:
+    prefix: /ocs/control/bucket/current
+    position: /position
+    velocity: /velocity
+    effort: /effort
